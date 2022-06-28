@@ -1,0 +1,32 @@
+*{margin: 0; padding: 0; background-color: gainsboro;}
+
+
+
+
+body
+{
+	font-family: impact;
+	font-size: 50px;
+	margin: 300px;
+}
+
+
+
+
+.fade-in 
+{
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 5s;
+}
+
+
+
+
+@keyframes fadeInOpacity
+{
+	0% {opacity:0;}
+	100% {opacity:1;}
+}

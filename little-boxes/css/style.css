@@ -1,0 +1,200 @@
+/* sets default margin and padding values */
+* {margin: 0; padding: 0; background-color: black;}
+
+/* The baseline for positioning all other divs */
+.page
+{
+	position: relative;
+	
+}
+/* The beak, placed first to be behind the head, GoldenRod triangle */
+.rostrum
+{
+	position: absolute;
+    top: 487px;
+    left: 1183px;
+    height: 0;
+    width: 0;
+    border-top: 29px solid transparent;
+    border-bottom: 26px solid transparent;
+    border-left: 48px solid GoldenRod;
+	
+}
+
+/* leg 1 orange rectangle */
+.crura-1
+{
+	position: absolute;
+    top: 748px;
+    left: 811px;
+    height: 211px;
+    width: 36px;
+    background-color: orange;
+}
+
+
+/* leg 2 orange rectangle */
+.crura-2
+{
+	position: absolute;
+    top: 748px;
+    left: 903px;
+    height: 211px;
+    width: 36px;
+    background-color: orange;
+}
+/* foot 1 orange rectangle */
+.pes-1
+{
+	position: absolute;
+    top: 924px;
+    left: 847px;
+    height: 35px;
+    width: 26px;
+    background-color: orange;
+}
+/* foot 2, orange rectangle */
+.pes-2
+{
+	position: absolute;
+    top: 924px;
+    left: 939px;
+    height: 35px;
+    width: 26px;
+    background-color: orange;
+
+}
+
+
+/* the main body of the duckling, gold circle */
+.corpus
+{
+	position: absolute;
+	top: 500px;
+	left: 700px;
+	background-color: gold;
+	height: 350px;
+	width: 350px;
+	border-radius: 50%;
+}
+
+/* the head of the duckling, gold circle */
+.caput
+{
+	position: absolute;
+	top: 400px;
+	left: 960px;
+	background-color: gold;
+	height: 230px;
+	width: 230px;
+	border-radius: 50%;
+}
+
+/* the only visible eye of the duckling, white oval */
+.oculus
+{
+	position: absolute;
+	top: 437px;
+	left: 1121px;
+	background-color: white;
+	height: 64px;
+	width: 35px;
+	border-radius: 50px / 100px;
+}
+/* pupil, black circle */
+.pupilla
+{
+	position: absolute;
+	top: 453px;
+	left: 1131px;
+	background-color: black;
+	height: 25px;
+	width: 25px;
+	border-radius: 50%;
+}
+
+/* the "non-traditional shaped" wing */
+.ala
+{
+	position: absolute;
+    top: 572px;
+    left: 778px;
+    background-color: yellow;
+    height: 183px;
+    width: 228px;
+    border-radius: 81% 14% 45% 42% / 54% 59% 35% 39%;
+}
+
+/* pond, blue circle */
+.pond
+{
+	position: absolute;
+    top: 909px;
+    left: 1250px;
+    background-color: blue;
+    height: 50px;
+    width: 643px;
+    border-radius: 50%;
+}
+/* stock of cattail 1, green rectangle */
+.cattail-1
+{
+position: absolute;
+    top: 732px;
+    left: 1554px;
+    height: 211px;
+    width: 12px;
+    background-color: green;
+}
+
+/* stock of cattail 2, green rectangle */
+.cattail-2
+{
+position: absolute;
+    top: 712px;
+    left: 1654px;
+    height: 231px;
+    width: 12px;
+    background-color: green;
+}
+
+/* cattail head 1, brown rectangle */
+.cattail-head-1
+{
+	position: absolute;
+    top: 738px;
+    left: 1548px;
+    height: 57px;
+    width: 26px;
+    background-color: brown;
+}
+
+/* cattail head 2, brown rectangle */
+.cattail-head-2
+{
+	position: absolute;
+    top: 718px;
+    left: 1648px;
+    height: 57px;
+    width: 26px;
+    background-color: brown;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
