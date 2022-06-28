@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Ledesma Pizzeria</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<h1>Order a Ledesma Pizza</h1>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="contact.html">Contact</a></li>
+			<li><a class = "current" href="order.html">Order</a></li>
+		</ul>
+		
+		<div id="mainPage"> </div>
+		
+		<h2>Order Below!</h2>
+		<p id="pContact" >Choose from our delicious menu below. Careful, it might <br>
+							knock your socks off!</p>
+		
+		
+		<form class="customerEntry" method="post">
+		
+		
+		
+			
+			
+			<div class="pizzaSize">
+			
+				<label for="size">Choose Size</label>
+				
+				<select name="size" id="size">
+					<option value="small">Small</option>
+					<option value="medium">Medium</option>
+					<option value="large">Large</option>
+					<option value="family">Family</option>
+				</select>
+				
+			</div>
+		
+		
+			<p class="toppingsP">Please select your toppings below</p>
+			
+			<div class="toppings">
+				
+				<div>
+					<label for="pepperoni"><img src="img/pepperoni.jpg" width="150" height="135">Pepperoni</label>
+					<input type="checkbox" id="pepperoni" name="toppings[]" value="pepperoni">
+				</div>
+
+				<div>
+					<label for="sausage"><img src="img/sausage.jpg" width="150" height="135">Sausage</label>
+					<input type="checkbox" id="sausage" name="toppings[]" value="sausage">
+				</div>
+
+				<div>
+					<label for="ham"><img src="img/ham.jpg" width="150" height="135">Ham</label>
+					<input type="checkbox" id="ham" name="toppings[]" value="ham">
+				</div>
+
+				<div>
+					<label for="onion"><img src="img/onion.jpg" width="150" height="135">Onion</label>
+					<input type="checkbox" id="onion" name="toppings[]" value="onion">
+				</div>
+				
+			</div>
+		
+		
+			<p class="crustSelectionP">Please select your crust below</p>
+		
+			<div class="crustSelection">
+				<div>
+					<label for="thinCrust"><img src="img/thinCrust.jpg" width="150" height="135">Thin Crust</label>
+					<input type="radio" id="thinCrust" name="crust" value="thin">
+				</div>
+
+				<div>
+					<label for="thickCrust"><img src="img/thickCrust.jpg" width="150" height="135">Thick Crust</label>
+					<input type="radio" id="thickCrust" name="crust" value="thick">
+				</div>
+
+				<div>
+					<label for="panCrust"><img src="img/panCrust.jpg" width="150" height="135">Pan Crust</label>
+					<input type="radio" id="panCrust" name="crust"  value="pan">
+				</div>
+
+				<div>
+					<label for="cheeseyCrust"><img src="img/cheesyCrust.jpg" width="150" height="135">Cheesey Crust</label>
+					<input type="radio" id="cheesyCrust" name="crust" value="cheesey">
+				</div>
+			</div>
+			
+			
+			<input class="customInput" name="first" placeholder="First Name" type="text">
+			<input class="customInput" name="last" placeholder="Last Name" type="text">
+			<input class="customInput" name="add1" placeholder="Address" type="text" required>
+			<input class="customInput" name="phone" placeholder="Phone Number" type="text" required>
+			<input class="customInput" name="email" placeholder="Email Address" type="text" required>
+			<textarea class="customInput" name="comments" placeholder="Comments"></textarea>
+			
+			<input class="customInput" type="reset">
+			<input class="customInput" type="submit">
+			
+		
+		</form>
+		
+		
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

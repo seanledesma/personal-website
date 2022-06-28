@@ -1,0 +1,107 @@
+body {
+  font: normal 22px/1.5 sans-serif;
+  background: #2196F3;
+  color: #fff;
+  padding: 50px 0;
+}
+
+form {
+  width: 400px;
+}
+
+.errorMsg {
+  color: red;
+}
+
+input.was-validated:invalid {
+  color: red;
+  border: 1px solid red;
+}
+
+input.was-validated:invalid ~ div.errorMsg {
+  display: block;
+}
+
+input:valid ~ div.errorMsg, input:invalid ~ div.errorMsg {
+  display: none;
+}
+
+input.was-validated:valid {
+    color: green;
+    border: 1px solid green;
+  }
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.flex {
+  list-style-type: none;
+  padding: 0;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.flex li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.flex li li input,
+.flex li textarea {
+  padding: 15px;
+  font: normal 16px/1.5 sans-serif;
+}
+
+.flex button {
+  margin: auto;
+  padding: 22px 46px;
+  font: normal 22px/1.5 sans-serif;
+  border: none;
+  background: #D84315;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  border-radius: 4px;
+}
+
+.flex > li {
+  margin-bottom: 20px;
+}
+
+.flex > li > label {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 140px;
+          flex: 1 0 140px;
+  max-width: 200px;
+}
+
+.flex > li + * {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 200px;
+          flex: 1 0 200px;
+}
+
+.flex > input[type='radio'] ~ div.errorMsg,
+.flex > input[type='checkbox'] ~ div.errorMsg {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 350px;
+          flex: 1 0 350px;
+  text-align: right;
+}

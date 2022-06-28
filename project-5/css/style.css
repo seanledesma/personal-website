@@ -1,0 +1,407 @@
+/*CHANGES FOR PROJECT 5: overhauled the entire html code to be in one sole page, with collapsable buttons, had to refactor
+a lot of css for the changes to work */
+
+* {
+	margin: 0;
+	padding: 0;
+	background-color: #FFF8DC;
+}
+
+.page {
+	/*position: relative;*/
+	background-color: SeaShell;
+}
+
+.header {
+	font-family: impact;
+	text-align: center;
+	background-color: rgb(255, 50, 0);
+	color: white;
+	font-size: 50px;
+	padding: 35px;
+}
+
+h2 {
+	font-family: impact;
+	text-align: left;
+	font-size: 40px;
+	padding: 35px;
+}
+
+
+
+/* Horizontal Menu */
+
+#greenBar {
+	display: inline-block;
+	background-color: rgb(0, 169, 34);
+	padding: 25px;
+	width: 100%;
+}
+
+ul li a {
+	padding: 15px;
+	margin: 10px;
+	font-size: 25px;
+	text-decoration: none;
+	font-family: impact;
+	color: white;
+
+	border-radius: 3px 3px 3px 3px;
+	transition: 0.4s;
+}
+
+ul li a:hover,
+.current {
+	color: rgb(0, 169, 34);
+	background-color: white;
+}
+
+/* End of Horizontal Menu */
+
+
+/* places all main photos of each page in same spot */
+.pagePhotos {
+	display: grid;
+	padding: 30px;
+
+}
+
+/*exception to other photos            FIXME*/
+.contactPic {
+	position: absolute;
+	top: 500px;
+	left: 505px;
+}
+
+.contactPicfdsa {
+	display: grid;
+	justify-content: end;
+	padding: 0px 300px 0px 100px;
+}
+
+/* home page */
+
+#pHome {
+	font-family: Georgia;
+	text-align: left;
+	font-size: 20px;
+	padding: 35px;
+}
+
+
+
+
+
+/* about page */
+#pAbout {
+	font-family: Georgia;
+	text-align: left;
+	font-size: 20px;
+	padding: 35px;
+}
+
+.youtube {
+	padding-left: 30px;
+	padding-bottom: 200px;
+}
+
+
+
+/* contact page */
+
+#pContact {
+	font-family: Georgia;
+	text-align: left;
+	font-size: 20px;
+	padding: 35px;
+}
+
+.customInput {
+	border: 20px;
+	background: white;
+	padding: 12px;
+	border-radius: 3px;
+	width: 350px;
+
+}
+
+
+
+
+/* beginning of Order Page */
+
+
+.pizzaSize {
+	margin: 40px;
+	font-family: Georgia;
+	text-align: left;
+	font-size: 35px;
+
+}
+
+.toppings {
+	display: flex;
+	flex-wrap: wrap;
+
+
+	margin: 40px;
+}
+
+.toppings div {
+	padding: 10px;
+}
+
+.toppingsP {
+	padding: 0px 0px 5px 40px;
+	font-family: Georgia;
+	font-size: 20px;
+}
+
+
+
+.crustSelection {
+	display: flex;
+	flex-wrap: wrap;
+
+
+	margin: 40px;
+}
+
+.crustSelection div {
+	padding: 10px;
+}
+
+
+.crustSelectionP {
+	padding: 0px 0px 5px 40px;
+	font-family: Georgia;
+	font-size: 20px;
+}
+
+
+#stateSelect {
+	margin: 40px;
+	font-family: Georgia;
+	font-size: 20px;
+}
+
+
+/*toggle night mode*/
+
+/* The switch - the box around the slider */
+.switch {
+	position: relative;
+	display: grid;
+	float: right;
+	margin: 0px 70px 0px 0px;
+	width: 60px;
+	height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+/* The slider */
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+input:checked+.slider {
+	background-color: #2196F3;
+}
+
+input:focus+.slider {
+	box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+	transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+	border-radius: 34px;
+}
+
+.slider.round:before {
+	border-radius: 50%;
+}
+
+.toggle {
+	margin: 35px 5px;
+	font-family: Arial;
+}
+
+
+
+/* VALIDATION FORM STUFF */
+
+#collapsible {
+	width: 100%;
+	border: 20px;
+	background: lightgray;
+	padding: 20px;
+	border-radius: 3px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#validationForm {
+	display: none;
+}
+
+#myform {
+	width: 400px;
+}
+
+.errorMsg {
+	color: red;
+}
+
+input.was-validated:invalid {
+	color: red;
+	border: 1px solid red;
+}
+
+input.was-validated:invalid~div.errorMsg {
+	display: block;
+}
+
+input:valid~div.errorMsg,
+input:invalid~div.errorMsg {
+	display: none;
+}
+
+input.was-validated:valid {
+	color: green;
+	border: 1px solid green;
+}
+
+.container {
+	width: 80%;
+	max-width: 1200px;
+	margin: 0 auto;
+	float: left;
+}
+
+.container * {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.flex {
+	list-style-type: none;
+	padding: 0;
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+.flex li {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+}
+
+.flex li li input,
+.flex li textarea {
+	padding: 15px;
+	font: normal 16px/1.5 sans-serif;
+}
+
+.flex button {
+	margin: auto;
+	padding: 22px 46px;
+	font: normal 22px/1.5 sans-serif;
+	border: none;
+	background: #D84315;
+	color: #f2f2f2;
+	text-transform: uppercase;
+	letter-spacing: .09em;
+	border-radius: 4px;
+}
+
+.flex>li {
+	margin-bottom: 20px;
+}
+
+.flex>li>label {
+	-webkit-box-flex: 1;
+	-ms-flex: 1 0 140px;
+	flex: 1 0 140px;
+	max-width: 200px;
+}
+
+.flex>li+* {
+	-webkit-box-flex: 1;
+	-ms-flex: 1 0 200px;
+	flex: 1 0 200px;
+}
+
+.flex>input[type='radio']~div.errorMsg,
+.flex>input[type='checkbox']~div.errorMsg {
+	-webkit-box-flex: 1;
+	-ms-flex: 1 0 350px;
+	flex: 1 0 350px;
+	text-align: right;
+}
+
+.find-page {
+	margin: 20px;
+}
+
+#formSubmit {
+	background-color: rgb(49, 87, 221);
+}
+
+/* fixing order menu */
+
+#pizzaMenu {
+	display: none;
+}
+
+#pOrder {
+	padding-left: 40px;
+}
+
+#welcomeScreen {
+	display: none;
+}
+
+.spacer {
+	padding: 40px;
+}

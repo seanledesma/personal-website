@@ -1,0 +1,64 @@
+span
+{
+	background-color: yellow;
+	font-size: 110%;
+}
+
+h1
+{
+	background-color: blue;
+	color: white;
+}
+
+div
+{
+	margin: 20px;
+	border: dashed red;
+}
+
+
+div.marvel
+{
+	color: red;
+	padding: 10px;
+}
+
+div.dc
+{
+	color: orange;
+	border: dotted orange;
+}
+
+body
+{
+	background-image: url('https://dobienews.scuc.txed.net/wp-content/uploads/2017/02/J8RwCn-1500x938.jpeg');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+p#special-id
+{
+	font-family: Helvetica;
+	font-size: 125%;
+	color: black;
+	margin: 35px;
+}
+
+p.backColor
+{
+	background-color: lightblue;
+	padding: 20px;
+}
+
+p.nameHere
+{
+	margin: 20px;
+	font-size: 136%;
+	background-color: yellow;
+}
+
+h2#newId
+{
+	font-family: impact;
+	border: 10px solid green;
+}

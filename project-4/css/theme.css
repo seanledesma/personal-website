@@ -1,0 +1,86 @@
+/* changed fonts, menu alignments, picture settins, added a night mode, etc.  */
+
+* {
+    background-color: #212121;
+}
+
+.header {
+    background-color: #660a0a;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+ul, ul li, ul li a {
+    background-color: #004700;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h2, #pHome, #pAbout, #pContact, #pOrder, 
+    .pizzaSize, #size, .toppings, .toppingsP, 
+    .crustSelection, .crustSelectionP, .toggle {
+    
+        color: #dedede;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.header {
+    text-align: right;
+    font-size: 50px;
+	padding: 15px;
+}
+
+ul
+{
+	display: inline-block;
+	float: right;
+}
+
+h2 {
+    color: #212121;
+}
+
+#pHome, #pAbout, #pContact, #pOrder {
+    text-align: center;
+    font-size: 30px;
+}
+
+
+
+.crop {
+    height: 25%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#contactForm {
+    align-items: center;
+}
+
+.contactPic {
+    visibility: hidden;
+}
+
+
+.toppings, .crustSelection {
+    align-items: center;
+    justify-content: center;
+}
+
+.toppingsP, .crustSelectionP, .pizzaSize {
+    display: flex;
+	flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+	margin: 40px;
+}
+
+.customInput {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.orderPics {
+    height: 80px;
+    width: 220px;
+    object-fit: cover;
+}

@@ -1,0 +1,41 @@
+General Rules
+    Fields should be validated 'onChange' (tab out or exit of input after field has changed). 
+    An error message should be displayed below the input if input has error.
+    If field is Valid we should indicate with red or green colored border
+    When submit button is clicked,  validation is performed on the whole form.
+    If form is valid, hide the form and display a thank you message.
+    If form is invalid,
+    mark the fields as invalid (css), and show the error message below the field. (just like you do onChange)
+
+Validation Library
+   /Create a javascript file, e.g., js/validate.js...  This will serve as your validation library.
+        /Include your javascript library in your html file/
+        /Place your main entry point on the page:
+        $(document).ready(function () {
+              initValidation("#myform");
+            });
+        you will want to place this after the javascript includes at the bottom/
+    Your "initValidation" function should:
+        Set up validation event callbacks
+            /onSubmit - Capture submit event and validate the whole form./
+                /Make sure you prevent the default event as well as event bubbling/
+                You can check whether a form is 'valid' you may use the DOM function
+                    form.checkValidity()   //returns false if any input is invalid
+            onChange - for a given element, as the person exits the field,  validate the element and display a custom message.
+    Field Validation
+        For most fields on the form, use Constraint Validation (Links to an external site.) rules on your form inputs
+            maxlength, minlength:  to limit # of characters 
+            pattern:  to apply a regex to phone, zip, and email
+            required:  to specify if a field is required
+        Your form tag should have a 'novalidate' attribute so that the default submit validation will not occur.
+        For the form elements you must validate using custom validation
+            /Create  a function called 'validateform' to perform your custom validation.  This should be called from both the 'change' and 'submit' events./
+            /'State' -  get the value from the input, convert to upper case, then verify if the value is in the 'stateAbbreviations' array/
+            /'How did you find this Page' (checkbox group)
+                Use jQuery to validate if any of the checkboxes in the group are selected.
+            You can use the following DOM functions to set an input as valid or invalid
+                el.setCustomValidity('')   //marks element as valid/
+                /el.setCustomValidity('Field is invalid because of ....')  //marks input as invalid/
+            Using CSS rules, you can style inputs based on the pseudo classes as follows:
+                input:invalid
+                input:valid

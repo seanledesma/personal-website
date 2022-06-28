@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Ledesma Pizzeria</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<script src="js/script.js" defer></script>
+	</head>
+	<body>
+		<h1 class = "header">Contact Ledesma Pizzeria</h1>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a class = "current" href="contact.html">Contact</a></li>
+			<li><a href="order.html">Order</a></li>
+		</ul>
+		
+		
+		
+		<h2>Get in Touch!</h2>
+		<p id="pContact" >Do you have any questions, comments <br>
+		or concerns? Reach out to us!</p>
+		<div class = "contactPic">
+			<img class="crop" src="img/contact.jpg" height=275 width=450 >
+		</div>
+		
+		
+		
+		
+		<form method="post" id="contactForm">
+			<input class="customInput" name="first-name" placeholder="First Name" type="text">
+			<input class="customInput" name="last-name" placeholder="Last Name" type="text">
+			<input class="customInput" name="email" placeholder="Email Address" type="text">
+			<textarea class="customInput" name="message" placeholder="Leave us a message"></textarea>
+			<input class="customInput" type="reset">
+			<input class="customInput" type="submit">
+		</form>
+		
+		
+		<label class="switch">
+			<p class="toggle">Toggle Night Mode</p></br>
+			<input type="checkbox" onclick="toggleTheme()" id="switchCheckBox">
+			<span class="slider round"></span>
+		</label>
+		
+		
+	</body>
+</html>

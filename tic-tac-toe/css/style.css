@@ -1,0 +1,112 @@
+/*{margin: 0; padding: 0; box-sizing: border-box; user-select: none;}*/
+
+
+.page
+{
+	position: relative;
+	background-color: SeaShell;
+}
+
+body
+{
+	
+	display: flex;
+	justify-content: space-around;
+}
+
+h2#game-header
+{
+	font-size: 100px;
+	font-family: impact;
+	color: yellow;
+	margin-bottom: 20px;
+	text-align: left;
+}
+
+div#game-layout
+{
+	overflow: hidden;
+	margin: 20px auto;
+
+}
+
+div[id^="row-"] 
+{
+	clear: both;
+}
+div[id^="row-"] div
+{
+	border: 20px solid yellow;
+	height: 200px;
+	width: 200px; 
+	float: left;
+	text-align: center;
+	font-family: impact;
+	font-size: 160px;
+	color: yellow;
+}
+
+div#row-1 div 
+{
+	border-top: none;
+}
+div#row-3 div 
+{
+	border-bottom: none;
+}
+div[id^="row-"] div:first-child
+{
+	border-left: none;
+}
+div[id^="row-"] div:last-child
+{
+	border-right: none;
+}
+
+					/*webform stuff I could not get working in JS*/
+.webform
+{
+	display: block;
+	border: 20px;
+	margin: 40px;
+	background: white;
+	padding: 12px;
+	border-radius: 3px;
+	width: 350px;
+	
+	
+}
+
+#player1
+{
+	position: absolute;
+	top: 300px;
+	left: 200px;
+}
+
+#player2
+{
+	position: absolute;
+	top: 400px;
+	left: 200px;
+}
+
+#submitButton
+{
+	position: absolute;
+	top: 500px;
+	left: 200px;
+}
+
+#playAgain
+{
+	position: absolute;
+	top: 300px;
+	left: 200px;
+}
+
+
+
+
+
+

@@ -1,0 +1,195 @@
+*{margin: 0; padding: 0; 
+	background-color: #FFF8DC;}
+.page
+{
+	/*position: relative;*/
+	background-color: SeaShell;
+}
+h1 
+{
+	font-family: impact;
+	text-align: center;
+	background-color: rgb(255, 50, 0);
+	color: white;
+	font-size: 50px;
+	padding: 35px;
+}
+h2
+{
+	font-family: impact;
+	text-align: left;
+	font-size: 40px;
+	padding: 35px;
+}
+
+
+
+														/* Horizontal Menu */
+														
+ul li, ul li a 
+{
+	display: inline-block;
+	background-color: rgb(0, 169, 34);
+}														
+														
+ul
+{
+	background-color: rgb(0, 169, 34);
+	text-align: center;
+}
+
+ul li a
+{
+	padding: 15px;
+	margin: 10px;
+	font-size: 25px;
+	text-decoration: none;
+	font-family: impact;
+	color: white;
+	
+	border-radius: 3px 3px 3px 3px;
+	transition: 0.4s;
+}
+
+ul li a:hover, .current
+{
+	color: rgb(0, 169, 34);
+	background-color: white;
+}
+													/* End of Horizontal Menu */
+
+
+/* places all main photos of each page in same spot */
+.pagePhotos
+{
+	position: absolute;
+	top: 500px;
+	left: 35px;
+	padding: 0px 0px 200px 0px;
+	
+}
+/*exception to other photos*/
+.contactPic
+{
+	position: absolute;
+	top: 250px;
+	left: 505px;
+}
+
+														/* home page */
+													
+#pHome
+{
+	font-family: Georgia;
+	text-align: left;
+	font-size: 20px;
+	padding: 35px;
+}
+
+
+
+
+
+														/* about page */
+#pAbout
+{
+	font-family: Georgia;
+	text-align: left;
+	font-size: 20px;
+	padding: 35px;
+}
+
+
+
+														/* contact page */
+													
+#pContact
+{
+	font-family: Georgia;
+	text-align: left;
+	font-size: 20px;
+	padding: 35px;
+}
+
+.customInput
+{
+	display: block;
+	border: 20px;
+	margin: 40px;
+	background: white;
+	padding: 12px;
+	border-radius: 3px;
+	width: 350px;
+	
+}
+
+
+
+
+												/* beginning of Order Page */
+
+
+.pizzaSize
+{
+	margin: 40px;
+	font-family: Georgia;
+	text-align: left;
+	font-size: 35px;
+	
+}
+
+.toppings
+{
+	margin: 40px;
+	padding: 100px 0px 50px 0px;
+}
+												
+.toppings p 
+{
+	padding: 0px 0px 15px 0px;
+	font-family: Georgia;
+	font-size: 20px;
+}									
+					
+
+					
+.crustSelection
+{
+	margin: 40px; 
+	padding: 50px 0px 100px 0px;
+}
+
+
+.crustSelection p 
+{
+	padding: 0px 0px 15px 0px;
+	font-family: Georgia;
+	font-size: 20px;
+}
+
+
+#stateSelect
+{
+	margin: 40px;
+	font-family: Georgia;
+	font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

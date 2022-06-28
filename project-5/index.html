@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Ledesma Pizzeria</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+
+	<script src="https://code.jquery.com/jquery-3.6.0.js"
+		integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	<script src="js/main.js" type="text/javascript"></script>
+</head>
+
+<body>
+	<h1 class="header">Welcome to Ledesma Pizzeria</h1>
+
+	<div id="greenBar"></div>
+
+	<div class="spacer"></div>
+
+	<button onclick="toggleValidationForm3()" type="button" id="collapsible">Open Welcome Screen</button>
+	<div id="welcomeScreen">
+		<h2>Welcome to Ledesma Pizzeria</h2>
+		<p id="pHome">We have been serving our community since 1985, and we are proud to be family owned <br>and
+			operated.
+			Come
+			on over to Ledesma Pizzeria, where we make every pizza with love and care.</p>
+		<div class="pagePhotos">
+			<img class="crop" src="img/pizzaHome.jpg" height=275 width=450 alt="oops">
+		</div>
+
+
+		
+	</div>
+
+	<div class="spacer"></div>
+
+
+
+	<button onclick="toggleValidationForm()" type="button" id="collapsible">Open Form Validation</button>
+	<div id="validationForm" class="container">
+		<h2 class="visitorForm">Visitor Form</h2>
+			<div class="successMsg" style="display:none">
+				Thank you for logging your visit!
+			</div>
+			<form id="myform" novalidate>
+				<ul class="flex">
+					<li class="section-display">
+						<label hidden for="first-name">First Name</label>
+						<input class="customInput" type="text" id="first-name" name="first-name"
+							placeholder="Enter your first name here" required>
+						<div class="errorMsg">First Name is Required</div>
+					</li>
+					<li>
+						<label hidden for="last-name">Last Name</label>
+						<input class="customInput" type="text" id="last-name" name="last-name"
+							placeholder="Enter your last name here" required>
+						<div class="errorMsg">Last Name is Required</div>
+					</li>
+					<li>
+						<label hidden for="address">Address</label>
+						<input class="customInput" type="text" id="address" name="address"
+							placeholder="Enter your address here" required>
+						<div class="errorMsg">Address is Required</div>
+					</li>
+					<li>
+						<label hidden for="city">City</label>
+						<input class="customInput" type="text" id="city" name="city" placeholder="Enter your city here"
+							required>
+						<div class="errorMsg">City is Required</div>
+					</li>
+					<li>
+						<label hidden for="state">State</label>
+						<input class="customInput" type="text" id="state" name="state"
+							placeholder="Enter your state here" minlength="2" maxlength="2" required>
+						<div class="errorMsg">State is Required (2 Letters Only)</div>
+					</li>
+					<li>
+						<label hidden for="zip">Zip</label>
+						<input class="customInput" id="zip" name="zip" type="text" placeholder="Enter a zip code here"
+							pattern="[0-9]{5}" required>
+						<div class="errorMsg">You must enter a valid Zip Code</div>
+					</li>
+					<li>
+						<label hidden for="email">Email</label>
+						<input class="customInput" type="email" id="email" name="email"
+							placeholder="Enter your email here" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+							required>
+						<div class="errorMsg">You must enter a valid email</div>
+					</li>
+					<li>
+						<label hidden for="phone">Phone</label>
+						<input class="customInput" type="phone" id="phone" placeholder="Eg. 888 888 8888"
+							pattern="[0-9]{3} [0-9]{3} [0-9]{4}" required>
+						<div class="errorMsg">You must enter a valid phone number</div>
+					</li>
+					<li>
+						<h2 class="visitorForm">How did you find my page</h2>
+					</li>
+					<li>
+						<input type="checkbox" id='google' class="find-page" value="google">
+						<label class="visitorForm" for="google">Google Search</label>
+					</li>
+					<li>
+						<input type="checkbox" id='friend' class="find-page" value="friend">
+						<label class="visitorForm" for="friend">Friend</label>
+					</li>
+					<li>
+						<input type="checkbox" id='newspaper' class="find-page" value="newspaper">
+						<label class="visitorForm" for="newspaper">News Paper</label>
+						<!--NOte that I have added the errorMsg div under the 'newspaper' checkbox.  When marking this group as 'valid' or 'invalid' you can just call setElementValidity on this one element instead of all of them 
+				  -->
+						<div id="checkboxError" class="errorMsg">You must check at least one</div>
+					</li>
+
+					<li>
+						<label hidden for="comment">Comments</label>
+						<textarea class="customInput" rows="4" id="comment" placeholder="Enter your comments here"
+							required></textarea>
+					</li>
+
+					<li>
+						<button class="customInput" id="formSubmit" type="submit">Send</button>
+					</li>
+				</ul>
+			</form>
+	</div>
+
+	<div class="spacer"></div>
+
+	<button onclick="toggleValidationForm2()" type="button" id="collapsible">Open Order Menu</button>
+
+	<div class="spacer"></div>
+
+	<div id="pizzaMenu">
+		<h2>Order Below!</h2>
+		<p id="pOrder">Choose from our delicious menu below. Careful, it might <br>
+			knock your socks off!</p>
+
+
+		<form class="customerEntry" method="post">
+
+
+			<div class="pizzaSize">
+
+				<label for="size">Choose Size</label>
+
+				<select name="size" id="size">
+					<option value="small">Small</option>
+					<option value="medium">Medium</option>
+					<option value="large">Large</option>
+					<option value="family">Family</option>
+				</select>
+
+			</div>
+
+
+			<p class="toppingsP">Please select your toppings below</p>
+
+			<div class="toppings">
+
+				<div>
+					<label for="pepperoni"><img class="orderPics" src="img/pepperoni.jpg" width="150"
+							height="135">Pepperoni</label>
+					<input type="checkbox" id="pepperoni" name="toppings[]" value="pepperoni">
+				</div>
+
+				<div>
+					<label for="sausage"><img class="orderPics" src="img/sausage.jpg" width="150"
+							height="135">Sausage</label>
+					<input type="checkbox" id="sausage" name="toppings[]" value="sausage">
+				</div>
+
+				<div>
+					<label for="ham"><img class="orderPics" src="img/ham.jpg" width="150" height="135">Ham</label>
+					<input type="checkbox" id="ham" name="toppings[]" value="ham">
+				</div>
+
+				<div>
+					<label for="onion"><img class="orderPics" src="img/onion.jpg" width="150" height="135">Onion</label>
+					<input type="checkbox" id="onion" name="toppings[]" value="onion">
+				</div>
+
+			</div>
+
+
+			<p class="crustSelectionP">Please select your crust below</p>
+
+			<div class="crustSelection">
+				<div>
+					<label for="thinCrust"><img class="orderPics" src="img/thinCrust.jpg" width="150" height="135">Thin
+						Crust</label>
+					<input type="radio" id="thinCrust" name="crust" value="thin">
+				</div>
+
+				<div>
+					<label for="thickCrust"><img class="orderPics" src="img/thickCrust.jpg" width="150"
+							height="135">Thick
+						Crust</label>
+					<input type="radio" id="thickCrust" name="crust" value="thick">
+				</div>
+
+				<div>
+					<label for="panCrust"><img class="orderPics" src="img/panCrust.jpg" width="150" height="135">Pan
+						Crust</label>
+					<input type="radio" id="panCrust" name="crust" value="pan">
+				</div>
+
+				<div>
+					<label for="cheeseyCrust"><img class="orderPics" class="orderPics" src="img/cheesyCrust.jpg"
+							width="150" height="135">Cheesey Crust</label>
+					<input type="radio" id="cheesyCrust" name="crust" value="cheesey">
+				</div>
+			</div>
+		</form>
+	</div>
+
+	<label class="switch">
+		<p class="toggle">Toggle Night Mode</p></br>
+		<input type="checkbox" onclick="toggleTheme()" id="switchCheckBox">
+		<span class="slider round"></span>
+	</label>
+
+	<script src="js/validation.js"></script>
+	<script>
+		$(document).ready(function () {
+			initValidation("#myform");
+
+		});
+	</script>
+</body>
+
+</html>
