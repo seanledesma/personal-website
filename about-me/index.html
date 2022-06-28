@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>About Sean Ledesma</title>
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+        <script src="js/script.js"></script>
+    </head>
+    <body onload="start()">
+        <h1>Sean Ledesma</h1>
+        <img id="sean" src="img/sean-small.JPG" alt="Sean" style="width:100%;max-width:300px">
+
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div> 
+
+        <h2>Personal Info:</h2>
+        <ul>
+            <li>I am majoring in Software Developement</li>
+            <li>I graduated from Kearns High School in 2016</li>
+            <li>This is my first semester at UVU, I am transfering from SLCC</li>
+            <li>My favorite flavor of ice cream is vanilla</li>
+        </ul>
+
+        <h2>My five favorite books</h2>
+        <ol>
+            <li><em>The Girl with the Dragon Tattoo</em>&nbsp;<a href="https://stieglarsson.com/">Stieg Larsson</a></li>
+            <li><em>The Book Theif</em>&nbsp;<a href="https://www.bridgeofclay.com/">Markus Zusak</a></li>
+            <li><em>Water for Elephants</em>&nbsp;<a href="http://www.saragruen.com/">Sara Gruen</a></li>
+            <li><em>A Man Called Ove</em>&nbsp;<a href="https://www.fredrikbackmanbooks.com/">Fredrick Backman</a></li>
+            <li><em>Eragon</em>&nbsp;<a href="https://www.paolini.net/">Christopher Paolini</a></li>
+        </ol>
+
+        <h2>Without End</h2>
+        <p class = "haiku">
+            Earth spins around<br>Rising Sun reaches further<br>Twisting without end.<br>
+        </p>
+
+        <p>
+            The inspiration for this Haiku is the helical model <br>the Sun and Earth take as they drift through space.
+        </p>
+
+        <h2>My Personal Interests</h2>
+        <p>
+            I have always been interested in computers and elctronics. When I was a teenager you could usually find me tinkering<br>
+            with something. I almost killed the family computer on several occasions because I had downloaded some virus while <br>
+            tinkering with it. I didn't have my own personal computer, so most of my time was spent on my android phone. <br>
+            I unlocked the bootloader, rooted it, and started installing custom firmware. <br>
+
+        </p>
+        <p>
+            Besides messing around with my computer and cell phone, I've also had a great interest in<br>
+            video making and editing. I rented video equipment from my High School on several occasions,<br>
+            using it to create short youtube videos with my friends. I became more and more proficient with<br>
+            Adobe Premiere Pro, although I don't do much of that these days.
+        </p>
+        <p>
+            Currently I'm more interested programming and networking. I've been setting up my own personal home server,<br>
+            I run ProxMox which is a HyperVisor OS, and then I run Debian Linux on top of that in a VM. This way <br>
+            I'm able to spin up more OS's in VM's if I wanted. Inside Debian I run Docker, which I access from the web <br>
+            using something called Portainer. From Docker I run a whole bunch of services, such as Pi-Hole, Plex, <br>
+            NextCloud and Home Assistant. 
+        </p>
+
+        <h2>Class Schedule</h2>
+        <table class="schedule">
+            <tr class = "weekdays">
+                <th class="cell"></th>
+                <th class="cell">Monday</th>
+                <th class="cell">Tuesday</th>
+                <th class="cell">Wednesday</th>
+                <th class="cell">Thursday</th>
+                <th class="cell">Friday</th>
+            </tr>
+            <tr class = "trainColor">
+                <td class="cell">10:00am</td>
+                <td class="cell">Leave to catch train</td>
+                <td class="cell">Leave to catch train</td>
+                <td class="cell">Leave to catch train</td>
+                <td class="cell">Leave to catch train</td>
+                <td class = "homeworkCell" rowspan="8">Study</td>
+            </tr>
+            <tr class = "trainColor">
+                <td class="cell">10:30am</td>
+                <td class="cell">Get on train</td>
+                <td class="cell">Get on train</td>
+                <td class="cell">Get on train</td>
+                <td class="cell">Get on train</td>
+            </tr>
+            <tr class = "trainColor">
+                <td class="cell">11:00am</td>
+                <td class="cell">Study on train</td>
+                <td class="cell">Study on train</td>
+                <td class="cell">Study on train</td>
+                <td class="cell">Study on train</td>
+            </tr>
+            <tr class = "trainColor">
+                <td class="cell">11:30am</td>
+                <td class="cell">Arrive at UVU station</td>
+                <td class="cell">Arrive at UVU station</td>
+                <td class="cell">Arrive at UVU station</td>
+                <td class="cell">Arrive at UVU station</td>
+            </tr>
+            <tr class = "cpp">
+                <td class="cell">12:00pm</td>
+                <td class="cell" rowspan="4">C++ Programming class</td>
+                <td class="cell" rowspan="4">C++ Programming class</td>
+                <td class="cell" rowspan="4">C++ Programming class</td>
+                <td class="cell" rowspan="4">C++ Programming class</td>
+            </tr>
+            <tr class = "cpp">
+                <td class="cell">12:30pm</td>
+            </tr>
+            <tr class = "cpp">
+                <td class="cell">1:00pm</td>
+            </tr>
+            <tr class = "cpp">
+                <td class="cell">1:30pm</td>
+            </tr>
+            <tr class = "lunch">
+                <td class="cell">2:00pm</td>
+                <td class="cell">Lunch</td>
+                <td class="cell">Lunch</td>
+                <td class="cell">Lunch</td>
+                <td class="cell">Lunch</td>
+                <td class="cell">Lunch</td>
+            </tr>
+            <tr class = "homeworkCell">
+                <td class="cell">2:30pm</td>
+                <td class="cell" rowspan="3">Do Homework</td>
+                <td class="cell" rowspan="3">Do Homework</td>
+                <td class="cell" rowspan="3">Do Homework</td>
+                <td class="cell" rowspan="3">Do Homework</td>
+                <td class="cell" rowspan="6">Study</td>
+            </tr>
+            <tr class = "homeworkCell">
+                <td class="cell">3:00pm</td>
+            </tr>
+            <tr class = "homeworkCell">
+                <td class="cell">3:30pm</td>
+            </tr>
+            <tr class = "trainColor">
+                <td class="cell">4:00pm</td>
+                <td class="cell" rowspan="2">Take train home</td>
+                <td class="cell" rowspan="2">Take train home</td>
+                <td class="cell" rowspan="2">Take train home</td>
+                <td class="cell" rowspan="2">Take train home</td>
+            </tr>
+            <tr class = "trainColor">
+                <td class="cell">4:30pm</td>
+            </tr>
+            <tr class = "homeCell">
+                <td class="cell">5:00pm</td>
+                <td class="cell">Get home</td>
+                <td class="cell">Get home</td>
+                <td class="cell">Get home</td>
+                <td class="cell">Get home</td>
+            </tr>
+            <tr class = "gymCell">
+                <td class="cell">5:30pm</td>
+                <td class="cell" rowspan="2">Go to Gym</td>
+                <td class="cell" rowspan="2">Go to Gym</td>
+                <td class="cell" rowspan="2">Go to Gym</td>
+                <td class="cell" rowspan="2">Go to Gym</td>
+                <td class="cell" rowspan="2">Go to Gym</td>
+            </tr>
+            <tr class = "gymCell">
+                <td class="cell">6:00pm</td>
+            </tr>
+        </table>
+    </body>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+  
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="img01">
+  
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption"></div>
+  </div>
+</html>
