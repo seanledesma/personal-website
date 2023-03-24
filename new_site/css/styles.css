@@ -4,18 +4,16 @@
 {
     display: grid;
     grid-template-columns: auto auto auto;
-    background-color: pink;
+    grid-template-rows: auto auto auto;
     padding: 10px;
+    padding-top: 5%;
 }
 
 .primary-text 
 {
-    
-    font-size: 200%;
     grid-column: span 2;
-    padding: 20px;
     padding-left: 10%;
-    
+    font-size: 300%;
     font-weight: bolder;
     color: #ededed;
     
@@ -24,33 +22,18 @@
 .secondary-text
 {
     grid-column: span 2;
-    padding-left: 10%;
+    padding-left: 12%;
     color: #b99bff;
     font-size: 175%;
-    
 }
 
 .menu-item 
 {
+    grid-row: span 2;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    justify-content: end;
     color: #ededed;
+    font-size: 120%;
 
 }
-
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    background-color: #2196F3;
-    padding: 10px;
-  }
-
-  .grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-  }
