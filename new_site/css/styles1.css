@@ -45,7 +45,8 @@
 
 .mountains 
 {
-    size: 100%;
+    max-width: 100%;
+    height: auto;
     grid-column: span 3;
     padding-left: 10%;
 }
