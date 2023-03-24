@@ -3,6 +3,10 @@
 .primary-text 
 {
     color: #ededed;
+    padding: 20px;
+    padding-left: 50px;
+    display: flex;
+    justify-content: flex-start;
 }
 .secondary-text
 {
