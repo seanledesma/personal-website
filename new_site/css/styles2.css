@@ -2,7 +2,20 @@
 
 .about-page 
 {
-    display: grid;
-    padding: 20%;
+    position: relative;
     background-color: #b99bff;
+    color: #ededed;
+    padding: 5%;
+    height: 50vh;/* set the height of the container to 50% of viewport height */
+}
+
+.about-me 
+{
+    position: absolute;
+    background-color: #121212;
+    padding: 5%;
+    height: 60%;
+    width: 80%;
+    top: 5%;
+    left: 2%;
 }
