@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Recipe Page</title>
+  </head>
+  <body>
+    <h1 id="recipe-title"></h1>
+    <ul id="recipe-ingredients"></ul>
+    <script>
+      // Make an AJAX request to the recipe.json file
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', 'recipe.json', true);
+      xhr.onload = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          // Parse the JSON data into a JavaScript object
+          var data = JSON.parse(xhr.responseText);
+
+          // Update the HTML elements with the recipe data
+          document.getElementById('recipe-title').innerHTML = data.title;
+          data.ingredients.forEach(function(ingredient) {
+            var li = document.createElement('li');
+            li.innerHTML = ingredient;
+            document.getElementById('recipe-ingredients').appendChild(li);
+          });
+        }
+      };
+      xhr.send();
+    </script>
+  </body>
+</html>
