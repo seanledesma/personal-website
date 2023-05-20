@@ -1,30 +1,54 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Recipe Page</title>
-  </head>
-  <body>
-    <h1 id="recipe-title"></h1>
-    <ul id="recipe-ingredients"></ul>
-    <script>
-      // Make an AJAX request to the recipe.json file
-      var xhr = new XMLHttpRequest();
-      xhr.open('GET', 'recipe.json', true);
-      xhr.onload = function() {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-          // Parse the JSON data into a JavaScript object
-          var data = JSON.parse(xhr.responseText);
-
-          // Update the HTML elements with the recipe data
-          document.getElementById('recipe-title').innerHTML = data.title;
-          data.ingredients.forEach(function(ingredient) {
-            var li = document.createElement('li');
-            li.innerHTML = ingredient;
-            document.getElementById('recipe-ingredients').appendChild(li);
-          });
-        }
-      };
-      xhr.send();
-    </script>
-  </body>
-</html>
+	<head>
+		<meta charset='UTF-8'>
+			<title>JSON To HTML using codebeautify.org</title>
+		</head>
+		<body>
+			<table border=1>
+				<thead>
+					<tr>
+						<th>title</th>
+						<th>ingredients.0</th>
+						<th>ingredients.1</th>
+						<th>ingredients.2</th>
+						<th>ingredients.3</th>
+						<th>ingredients.4</th>
+						<th>ingredients.5</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Baby Spinach Omelet Recipe</td>
+						<td>
+2  eggs
+</td>
+						<td>
+1 cup torn baby spinach leaves
+</td>
+						<td>
+1 ½ tablespoons grated Parmesan cheese
+</td>
+						<td>
+¼ teaspoon onion powder
+</td>
+						<td>
+⅛ teaspoon ground nutmeg
+</td>
+						<td>
+  salt and pepper to taste
+</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>&nbsp</td>
+						<td>&nbsp</td>
+						<td>&nbsp</td>
+						<td>&nbsp</td>
+						<td>&nbsp</td>
+						<td>&nbsp</td>
+					</tr>
+				</tbody>
+			</table>
+		</body>
+	</html>
