@@ -1362,7 +1362,7 @@ async function __wbg_init(input) {
     if (wasm !== undefined) return wasm;
 
     if (typeof input === 'undefined') {
-        input = new URL('mind_graph-47f1aa627b664d41_bg.wasm', import.meta.url);
+        input = new URL('mind_graph-74af71d4900a0204_bg.wasm', import.meta.url);
     }
     const imports = __wbg_get_imports();
 
