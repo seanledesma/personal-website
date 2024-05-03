@@ -1,0 +1,144 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    box-sizing: border-box; /* Includes padding in width calculation */
+    padding: 20px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header, section {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+h1, h2, h3, p, li {
+    margin: 0 0 10px 0; /* Adjust margins to fit your content better */
+    padding: 0;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 5px; /* Closer to email/phone line */
+}
+
+
+h3 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+p, li {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+#education {
+    width: 100%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 20px 0;
+    padding-bottom: 5px; /* Adds space between the text and the border */
+    border-bottom: 2px solid #ccc; /* Adds a gray line below the title */
+    text-align: left; /* Ensures the title is centered, adjust as needed */
+}
+
+.education-block, .experience-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.info-box, .date-box {
+    padding: 0 20px; /* Adds padding on both sides for better spacing */
+}
+
+.info-box {
+    text-align: left;
+    flex-grow: 1; /* Allows the box to expand and use available space */
+}
+
+.date-box {
+    text-align: right;
+    width: 200px; /* Fixed width for consistency */
+}
+
+p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+
+#experience {
+    width: 100%;
+    text-align: center;
+}
+
+.job-block {
+    margin-bottom: 20px;
+    text-align: left;
+    width: 100%;
+}
+
+.job-details {
+    display: flex;
+    justify-content: space-between; /* Ensures the title and dates are spread out */
+    align-items: center;
+}
+
+.job-title {
+    flex-grow: 1; /* Allows the job title to take up the available space */
+}
+
+.job-dates {
+    width: 200px; /* Fixed width for consistency */
+    text-align: right; /* Dates are right-aligned */
+}
+
+.job-responsibilities {
+    list-style: disc outside; /* Puts the bullet outside the content, adding indent */
+    padding-left: 40px; /* Slightly more indentation from the job details */
+    margin-top: 5px; /* Space between company/dates and responsibilities */
+    text-align: left; /* Consistency in text alignment */
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+
+
