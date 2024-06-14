@@ -1,86 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sean Ledesma - Resume</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h1>SEAN LEDESMA</h1>
-            <p>sean.p.ledesma@gmail.com | (801) 499-1063 | seanledesma.com</p>
-        </header>
-        <section id="education">
-            <h2>EDUCATION</h2>
-            <div class="education-block">
-                <div class="info-box">
-                    <p><strong>Utah Valley University</strong></p>
-                    <p><em>Bachelor of Applied Science in Software Development</em></p>
-                </div>
-                <div class="date-box">
-                    <p>August 2020 - May 2024</p>
-                </div>
-            </div>
-            <div class="education-block">
-                <div class="info-box">
-                    <p><strong>Kearns High School</strong></p>
-                    <p><em>High School Diploma</em></p>
-                </div>
-                <div class="date-box">
-                    <p>August 2013 - May 2016</p>
-                </div>
-            </div>
-        </section>
-        
-        
-        <section id="experience">
-            <h2>WORK EXPERIENCE</h2>
-            <div class="job-block">
-                <div class="job-details">
-                    <div class="job-title">
-                        <p><strong>Store Protection Specialist</strong></p>
-                        <p><em>Ross</em></p>
-                    </div>
-                    <div class="job-dates">
-                        <p>June 2023 - Present</p>
-                        <p>Orem, UT</p>
-                    </div>
-                </div>
-                <ul class="job-responsibilities">
-                    <li>Greet and engage customers with a professional and welcoming demeanor in multiple languages, fostering a positive and inclusive shopping experience.</li>
-                    <li>Utilize strong communication and interpersonal skills to resolve disputes and ensure customer satisfaction.</li>
-                    <li>Monitor store activities attentively, identifying and reporting suspicious behavior to mitigate potential theft.</li>
-                    <li>Assist in training new staff on security procedures and providing excellent customer service.</li>
-                </ul>
-            </div>
+	<head>
+		<title>Sean Paul Ledesma</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		<script src="js/script.js"></script>
+		
+	
+	</head>
+	
+	<body>
+		<header
+		style="
+		height: 85vh;
+		min-height: 500px;
+		background-image: url('https://i.pinimg.com/originals/01/c4/2b/01c42b2857a5344a1ef75bb74c7985f2.png');
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;">
+			<div class="container h-100" id="container">
+				<div class="row h-100 align-items-center">
+					<div class="col-12 text-center" style="color: white">
+						<h1 class="fw-light" style="padding-bottom:80px;">Hi, I'm Sean. Welcome to my Website.</h1>
+						<h2 class="fw-light" style="padding-top:80px;">Inspirational Quotes</h2>
+						<p class="lead" id="quoteDisplay" style="margin: 20px"></p>
+						<button onclick="newQuote()" class="btn btn-light">New Quote</button>
+					</div>
+				</div>
+			</div>
+		</header> 
+		
+		<div style="padding: 40px;"></div>
+		
+		
+		<div class="row row-cols-1 row-cols-md-4 g-4">
+			<div class="col d-flex justify-content-center">
+				<div class="card h-100" style="width: 18rem;">
+					<img src= "img/link16bit.png" class="card-img-top" alt="img/smile.png">
+					<div class="card-body">
+						<h2 class="card-title">YouTube Video Page</h2>
+						<p class="card-text">Check out some of my favorite Zelda music</p>
+						<a href="tables/index.html" class="btn btn-primary stretched-link">Check it out!</a>
+					</div>
+				</div>
+			</div>
+					
+			<div class="col d-flex justify-content-center">
+				<div class="card h-100" style="width: 18rem;">
+					<img src= "img/pizza1.png" class="card-img-top" alt="img/smile.png">
+					<div class="card-body">
+						<h2 class="card-title">Pizza 1</h2>
+						<p class="card-text">An early version of my Pizzeria Website</p>
+						<a href="pizza-2/index.html" class="btn btn-primary stretched-link">Check it out!</a>						
+					</div>
+				</div>
+			</div>
+			
+			<div class="col d-flex justify-content-center">
+				<div class="card h-100 soundTrack" style="width: 18rem;">
+					<img src= "img/friends.jpg" class="card-img-top" alt="img/smile.png">
+					<div class="card-body" id="div4">
+						<h2 class="card-title">Mappin' It</h2>
+						<p class="card-text">See and Image Map of Friends</p>
+						<a href="image-map/index.html" class="btn btn-primary">Check it out!</a>
+						<button type="button" class="btn btn-secondary" onClick="playAudio()">Get a Taste</button>
+						
+					</div>
+				</div>
+			</div>
+			
+			<div class="col d-flex justify-content-center">
+				<div class="card h-100" style="width: 18rem;">
+					<img src= "img/superman.jpg" class="card-img-top" alt="img/smile.png">
+					<div class="card-body">
+						<h2 class="card-title">Super Heroes</h2>
+						<p class="card-text">A unique CSS playground, dedicated to super heroes</p>
+						<a href="superheroes/index.html" class="btn btn-primary stretched-link">Check it out!</a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col d-flex justify-content-center">
+				<div class="card h-100" style="width: 18rem;">
+					<img src= "img/seaFoam.jpg" class="card-img-top" alt="img/smile.png">
+					<div class="card-body">
+						<h2 class="card-title">Horizontal Menu</h2>
+						<p class="card-text">A sea-foam-green horizontal menu example</p>
+						<a href="horizontal-menu/index.html" class="btn btn-primary stretched-link">Check it out!</a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col d-flex justify-content-center">
+				<div class="card h-100" style="width: 18rem;">
+					<img src= "img/duckling.jpg" class="card-img-top" alt="img/smile.png">
+					<div class="card-body">
+						<h2 class="card-title">Little Boxes</h2>
+						<p class="card-text">A cute duckling, made entirely with div's</p>
+						<a href="little-boxes/index.html" class="btn btn-primary stretched-link">Check it out!</a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col d-flex justify-content-center">
+				<div class="card h-100" style="width: 18rem;">
+					<img src= "img/pizzaTwo.jpg" class="card-img-top" alt="img/smile.png">
+					<div class="card-body">
+						<h2 class="card-title">Pizza 2</h2>
+						<p class="card-text">The final version of my Pizzeria Website</p>
+						<a href="project-5/index.html" class="btn btn-primary stretched-link">Check it out!</a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col d-flex justify-content-center">
+				<div class="card h-100" style="width: 18rem;">
+					<img src= "img/cake.jpg" class="card-img-top" alt="img/smile.png">
+					<div class="card-body">
+						<h2 class="card-title">JS Birthday</h2>
+						<p class="card-text">Experimenting with JavaScript</p>
+						<a href="js-birthday/index.html" class="btn btn-primary stretched-link">Check it out!</a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col d-flex justify-content-center">
+				<div class="card h-100" style="width: 18rem;">
+					<img src= "img/madLib.jpg" class="card-img-top" alt="img/smile.png">
+					<div class="card-body">
+						<h2 class="card-title">Mad-Lib</h2>
+						<p class="card-text">Create your own Mad-Lib with JS prompts</p>
+						<a href="mad-lib/index.html" class="btn btn-primary stretched-link">Check it out!</a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col d-flex justify-content-center">
+				<div class="card h-100" style="width: 18rem;">
+					<img src= "img/lottery.jpg" class="card-img-top" alt="img/smile.png">
+					<div class="card-body">
+						<h2 class="card-title">The Lottery Game</h2>
+						<p class="card-text">Choose how many random lotto numbers you need</p>
+						<a href="lottery/index.html" class="btn btn-primary stretched-link">Check it out!</a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col d-flex justify-content-center">
+				<div class="card h-100" style="width: 18rem;">
+					<img src= "img/tictac.jpg" class="card-img-top" alt="img/smile.png">
+					<div class="card-body">
+						<h2 class="card-title">Tic-Tac-Toe</h2>
+						<p class="card-text">Play a game of Star-Wars themed tic-tac-toe</p>
+						<a href="tic-tac-toe/index.html" class="btn btn-primary stretched-link">Check it out!</a>
+					</div>
+				</div>
+			</div>
 
-            <div class="job-block">
-                <div class="job-details">
-                    <div class="job-title">
-                        <p><strong>Meat Cutter</strong></p>
-                        <p><em>Sam’s Club</em></p>
-                    </div>
-                    <div class="job-dates">
-                        <p>July 2020 - April 2021</p>
-                        <p>West Jordan, UT</p>
-                    </div>
-                </div>
-                <ul class="job-responsibilities">
-                    <li>Used industry standard tools and techniques to process meat efficiently, maintaining quality and freshness.</li>
-                    <li>Monitored and maintained the presentation of the display case, ensuring products were attractively showcased and properly labeled.</li>
-                    <li>Collaborated with other team members to ensure the meat department operated efficiently and effectively.</li>
-                </ul>
-            </div>
-            <!-- Repeat blocks for other jobs -->
-        </section>
-        
-        
-        <section id="skills">
-            <h2>SKILLS</h2>
-            <p>Customer Interaction, Technical Proficiency, Team Dynamics...</p>
-        </section>
-    </div>
-</body>
+			<div class="col d-flex justify-content-center">
+				<div class="card h-100" style="width: 18rem;">
+					<img src= "new_site/img/logo.png" class="card-img-top" alt="img/smile.png">
+					<div class="card-body">
+						<h2 class="card-title">New Site</h2>
+						<p class="card-text">Take a peek at the next version of my website!</p>
+						<a href="new_site/index.html" class="btn btn-primary stretched-link">Check it out!</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col d-flex justify-content-center">
+				<div class="card h-100" style="width: 18rem;">
+					<img src= "cookbook/img/cookbook.png" class="card-img-top" alt="img/smile.png">
+					<div class="card-body">
+						<h2 class="card-title">Cookbook</h2>
+						<p class="card-text">Discover thousands of easy-to-read recipes</p>
+						<a href="cookbook/index.html" class="btn btn-primary stretched-link">Check it out!</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col d-flex justify-content-center">
+				<div class="card h-100" style="width: 18rem;">
+					<img src= "mindgraph/icon_ios_touch_192.png" class="card-img-top" alt="img/smile.png">
+					<div class="card-body">
+						<h2 class="card-title">MindGraph</h2>
+						<p class="card-text">Webassembly!</p>
+						<a href="mind_graph/index.html" class="btn btn-primary stretched-link">Check it out!</a>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div style="padding: 100px;"></div>
+		
+		
+		
+		<audio id="audio">
+			<source src="audio/friends8bit.mp3"/>
+		</audio>
+		
+		<div class="container h-100 lead p-3 mb-2 bg-light text-dark">
+			<h3>Reflection</h3>
+			<p>I hope you’ve enjoyed taking a look at my website. This site represents a lot of my time and work, 
+			and it’s something I’ve come to be proud of. The links to my past projects are in chronological order 
+			starting at the top, so you can see how my work has progressed. I’ve gone from knowing nothing of web 
+			development to becoming a fairly decent beginner. It is really amazing to start from basically nothing 
+			and create a website that I can show to my family and friends. It’s frustrating, difficult, time-consuming, 
+			but very rewarding. The feeling of finally discovering the solution to a problem is amazing. I am very glad 
+			I took this class, and am looking forward to the next one.          -Sean Ledesma</p>
+		</div>
+		
+		<div style="padding: 100px;"></div>
+		
+	</body>
+
 </html>
