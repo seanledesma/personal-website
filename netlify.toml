@@ -1,4 +1,9 @@
- 
+[[redirects]]
+  from = "/*"
+  to = "https://seanledesma.dev"
+  status = 301
+  force = true
+
 [[headers]]
 for = "*.wasm"
 [headers.values]
